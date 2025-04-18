@@ -1,0 +1,36 @@
+body{
+  font-family:"Arial", "Meiryo", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+h1{
+  /*フォント*/
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  /*影*/
+  text-shadow: 3px 3px 3px rgb(148, 148, 148);
+
+  /* 文字2倍 */
+  font-size: 40px;
+  letter-spacing: 1.2em; /* 文字間の幅を1.2倍に設定 */
+  border-bottom: 3px solid rgb(115, 115, 114); /* 3pxの実線、色は指定されたrgb */
+}
+
+/*色*/
+.pink{
+  color: rgb(255, 192, 203);
+}
+/*色*/
+.blue{
+
+  color: skyblue;
+}
+
+/*子孫のpを太文字*/
+#basic p{
+  font-weight: bold;
+}
