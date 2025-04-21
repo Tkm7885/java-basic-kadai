@@ -1,0 +1,101 @@
+body{
+  margin: 0px;
+}
+
+p{
+  margin: 0px;
+  font-size: 20px;
+}
+
+p:nth-of-type(2)::first-letter{
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+}
+
+a{
+  font-size: 20px;
+}
+
+a:link {
+  color: rgb(255, 255, 255);
+}
+
+/*訪問済み*/
+a:visited {
+  color: rgb(193, 234, 251);
+}
+
+/*カーソルが乗る*/
+a:hover {
+  color: rgb(245, 178, 168);
+}
+
+header{
+  margin-bottom: 20px;
+  background-color:  rgb(244, 79, 79);
+  text-align: center;
+}
+
+h1{
+  margin: 0px;
+  color:  rgb(255, 255, 255);
+}
+
+h2{
+  font-size: 25px;
+  border-bottom: dotted 3px rgb(236, 122, 122);
+}
+
+h2::before{
+  content: "・";
+  color: rgb(239, 111, 139);
+}
+
+main{
+  margin: 10px;
+}
+
+.contents img{
+  position: relative;
+  /*上、右、下、左*/
+  width: 70%;
+  margin: 10px 0px 10px 0px;
+
+}
+
+#parent{
+  display: flex;
+  Justify-content: space-between
+}
+
+.contents{
+  position: relative;
+  border: solid 3px rgb(238, 204, 204);
+  flex-basis: 25%;
+  /*上、右、下、左*/
+  padding: 10px 15px 10px 15px;
+  margin: 20px 0px 20px 0px;
+  text-align: center; 
+}
+
+footer{
+  background-color:  rgb(244, 79, 79);
+  color:  rgb(255, 255, 255);
+  text-align: center;
+}
+
+
+/*レスポンシブデザイン : 768px以下の時*/
+@media screen and (max-width: 768px) {
+  .contents {
+       display: inline-block;
+  }
+
+  p{
+   font-size: 25px; 
+  }
+
+  h2{
+    font-size: 30px;
+  }
+}
