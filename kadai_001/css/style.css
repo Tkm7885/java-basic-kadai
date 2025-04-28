@@ -1,0 +1,218 @@
+.google-fonts {
+  /* ここにGoogle Fontsを指定します */
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+  max-width: 1080px;
+  margin: 0 auto 0 auto;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 40px;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*ヘッダーの文字*/
+header p{
+  /*中央寄せに*/
+  position: relative;
+  color: #0d0d0d;
+  border: solid 1px #0d0d0d;
+  padding: 8px 15px 8px 15px;
+  font-weight: bold;
+  font-size: 34px;
+  bottom: 16px;
+}
+
+
+/* ナビゲーションのレイアウト */
+#nav {
+  margin-top: 10px;
+}
+ #nav ul {
+  display: flex;
+  padding-left: 0;
+}
+#nav li {
+  list-style: none;
+}
+ 
+ /* ナビゲーションのリンクの装飾設定 */
+ #nav a {
+  /*中央寄せに*/
+  position: relative;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0d0d0d;
+  padding: 8px 15px 8px 15px;
+  font-size: 34px;
+}
+ 
+ #nav a:hover {
+  text-decoration: underline;
+}
+
+/*メインの写真*/
+#main-visual > img {
+  max-width: 100%;
+  position: relative;
+  z-index: 10;
+  
+}
+
+/*自己紹介の場所*/
+#about {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/*自己紹介写真のエリア*/
+.imgg{
+  text-align: center;
+  margin: auto 0 auto 60px;
+  padding-right: 50px;
+}
+
+/*自己紹介写真*/
+.fivegoals-image-left {
+  width: 120%;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 50%;
+}
+
+/*h2*/
+.fivegoals-h2{
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+/*h3*/
+.fivegoals-h3 {
+  font-size: 24px;
+  margin: 0;  
+  padding-bottom: 10px;
+}
+
+/*テキストが表示されるエリア*/
+.aboutText{
+  margin-left: 30px;
+  padding-top: 50px;
+}
+
+/*紹介文*/
+.koumoku{
+  position: relative;
+  left: 30px; 
+  font-size: 18px;
+}
+
+#works{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* 写真の紹介 */
+.works-box{
+  width: 25%;
+  text-align: center;
+  margin: 3px;
+}
+
+/*写真*/
+.works-box img{
+  width: 100%;
+}
+
+/*フッター*/
+#copyright {
+  margin-top: 60px;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 767px) {
+
+
+  #nav a {
+    /*中央寄せに*/
+    position: relative;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0d0d0d;
+    font-size: 17px;
+  }
+
+  /*ヘッダーの文字*/
+  header p{
+    /*中央寄せに*/
+    position: relative;
+    color: #0d0d0d;
+    border: solid 1px #0d0d0d;
+    font-weight: bold;
+    font-size: 17px;
+    bottom: 16px;
+    top: 2px;
+    white-space: nowrap;
+  }
+  
+  /* ナビゲーションのリンクの装飾設定 */
+
+
+    /*自己紹介写真のエリア*/
+  .imgg{
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    
+  }
+
+  /*自己紹介写真*/
+  .fivegoals-image-left {
+    width: 100%;
+    border-radius:50%;
+    margin-top: 100px;
+    margin: auto;
+  }
+
+
+  #works{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+
+  /* 写真の紹介 */
+  .works-box{
+    width: 100%;
+    text-align: center;
+    margin: 3px;
+  }
+
+  /*写真*/
+  .works-box img{
+    width: 100%;
+    margin: auto;
+  }
+
+  .aboutText{
+    padding-top: 50px;
+    margin: auto;
+  }
+}
