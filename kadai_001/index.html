@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyProfile</title>
+    <meta charest="UTF-8">
+    <meta name="viewport" content="width=device-width,initial=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--ヘッダー-->
+    <header>
+      <div class="navlogo">
+        <a href="index.html" id="logo">
+          <p>MyProfile</p>
+        </a> 
+      </div>
+      <!--ナビゲーション -->
+      <nav id="nav">
+        <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#works">Works</a></li>
+        </ul>
+      </nav> 
+    </header>
+
+    <!--メイン-->
+    <main>
+      <article>
+        <!-- メインビジュアル -->
+        <section id="main-visual">
+          <img src="images\main.png" alt="カメラ"> 
+        </section>
+
+        <!--メインの下-->
+        <h2 class="fivegoals-h2">about</h2>
+        <section id="about">   
+          <div class="imgg">
+            <img class="fivegoals-image-left" src="images\about.png" alt="顔">
+          </div>
+          <div class="aboutText">
+            <h3 class="fivegoals-h3">Kazuki Asahina</h3>
+            <li class="koumoku">25歳長野県佐久市出身</li>
+            <li class="koumoku">ソフトウェア業界でマーケティングに従事</li>
+            <li class="koumoku">趣味はカメラ、愛機はCanon</li>
+            <li class="koumoku">自然を撮影するのが好きで、海や山によく行く</li>
+          </div>
+        </section>
+
+        <h2 class="fivegoals-h2">Works</h2>
+        <section id="works">
+          
+          <div class="works-box">
+            <img src="images\works1.png" alt="01">
+            <div>
+              <p>新潟に訪れた際に、日本海の雄大さに魅了された撮影した1枚</p>
+            </div>
+          </div> 
+
+          <div class="works-box">
+            <img src="images\works2.png" alt="02">
+            <div>
+              <p>地元長野の木曽町から撮影した、冠雪した御獄山</p>
+            </div>
+          </div> 
+
+          <div class="works-box">
+            <img src="images\works3.png" alt="03">
+            <div>
+              <p>京都で撮影した、明け方の古き良き日本の街並み</p>
+            </div>
+          </div> 
+
+        </section>
+
+
+      </article>
+    </main>
+
+    <footer>
+        <p id="copyright">&copy;MyProfile.All rights reserved.</p>
+    </footer>
+  </body>
+</html>
