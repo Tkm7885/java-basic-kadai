@@ -6,10 +6,7 @@
   font-style: normal;
 }
 
-body{
-  max-width: 1080px;
-  margin: 0 auto 0 auto;
-}
+
 
 /* ヘッダー */
 header {
@@ -34,7 +31,6 @@ header p{
   bottom: 16px;
 }
 
-
 /* ナビゲーションのレイアウト */
 #nav {
   margin-top: 10px;
@@ -47,7 +43,7 @@ header p{
   list-style: none;
 }
  
- /* ナビゲーションのリンクの装飾設定 */
+/* ナビゲーションのリンクの装飾設定 */
  #nav a {
   /*中央寄せに*/
   position: relative;
@@ -57,22 +53,22 @@ header p{
   padding: 8px 15px 8px 15px;
   font-size: 34px;
 }
- 
+
  #nav a:hover {
   text-decoration: underline;
 }
 
 /*メインの写真*/
 #main-visual > img {
-  max-width: 100%;
+  width: 100vw;
   position: relative;
   z-index: 10;
-  
 }
 
 /*自己紹介の場所*/
 #about {
   padding: 20px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -96,7 +92,7 @@ header p{
 .fivegoals-h2{
   font-size: 34px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   margin-top: 50px;
 }
 
@@ -144,9 +140,7 @@ header p{
   text-align: center;
 }
 
-
 @media screen and (max-width: 767px) {
-
 
   #nav a {
     /*中央寄せに*/
@@ -169,11 +163,15 @@ header p{
     top: 2px;
     white-space: nowrap;
   }
-  
+
+  #about {
+    padding: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+  }
   /* ナビゲーションのリンクの装飾設定 */
-
-
-    /*自己紹介写真のエリア*/
+  /*自己紹介写真のエリア*/
   .imgg{
     text-align: center;
     margin: auto;
@@ -188,7 +186,6 @@ header p{
     margin-top: 100px;
     margin: auto;
   }
-
 
   #works{
     display: flex;
